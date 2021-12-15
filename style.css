@@ -1,0 +1,164 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+}
+header{
+    padding: 1em;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+}
+header h1{
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: opacar;
+    animation-iteration-count: inherit;
+}
+@keyframes opacar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.link{
+    text-decoration: black;
+}
+section{
+    padding: 50px;
+    background: aliceblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content 10em;
+    row-gap: 5em;
+    text-align: center;
+}
+section div img{
+    width: 300px;
+    border: 1px solid black;
+}
+.categorias{
+    display: grid;
+    grid-column: 1/3;
+    grid-template-rows: max-content 5em;
+}
+.categorias-hijo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.input-uno{
+    width: 75px;
+    height: 30px;
+    transition: all 2s;
+}
+.input-uno:hover{
+    background-color: royalblue;
+    width: 100px;
+    height: 50px;
+}
+.input-dos{
+    width: 75px;
+    height: 30px;
+    transition: all 2s;
+}
+.input-dos:hover{
+    background-color: royalblue;
+    width: 100px;
+    height: 50px;
+}
+.input-tres{
+    width: 75px;
+    height: 30px;
+    transition: all 2s;
+}
+.input-tres:hover{
+    background-color: royalblue;
+    width: 100px;
+    height: 50px;
+}
+.opinion{
+    display: flex;
+    justify-content: center;
+}
+section textarea{
+    width: 300px;
+    height: 20px;
+    transition: all 2s;
+}
+section textarea:focus{
+    width: 500px;
+    height: 100px;
+}
+footer{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen  and (max-width: 620px) {
+    header{
+        background-color: chartreuse;
+        font-size: small;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    section div img {
+        width: 250px;
+    }
+    footer{
+        background-color: chartreuse;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        background-color: brown;
+        flex-direction: column;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        background-color: brown;
+    }
+}
+@media screen and (max-width: 320px) {
+    header{
+        background-color: darkslateblue;
+        font-size: x-small;
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+    }
+    section div img{
+        width: 100px;
+    }
+    section .categorias .categorias-hijo{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    footer{
+        background-color: darkslateblue;
+        font-size: x-small;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
